@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CV ARDHI</title>
+
+    <style>
+        /* Gaya umum untuk body */
+        body {
+            background-color: rgb(35, 35, 35); /* Warna latar belakang halaman */
+            color: Cornsilk; /* Warna teks */
+            font-family: Arial, sans-serif; /* Jenis font untuk halaman */
+            padding-top: 20px; /* Padding atas untuk halaman */
+        }
+
+        /* Gaya untuk header */
+        .header {
+            display: flex; /* Menggunakan flexbox untuk menyusun elemen di dalamnya */
+            justify-content: space-between; /* Membagi ruang antara elemen */
+            align-items: center; /* Mengatur vertikal center untuk elemen di dalamnya */
+            margin-left: 12%; /* Margin kiri untuk header */
+            margin-right: 12%; /* Margin kanan untuk header */
+            margin-bottom: 30px; /* Margin bawah untuk header */
+        }
+
+        /* Gaya untuk navbar */
+        .navbar {
+            display: flex; /* Menggunakan flexbox untuk menyusun ikon di navbar */
+            gap: 15px; /* Jarak antar ikon */
+        }
+
+        /* Gaya untuk gambar di dalam navbar */
+        .navbar a img {
+            width: 30px; /* Lebar gambar */
+            height: 30px; /* Tinggi gambar */
+            margin-left: 20px;
+        }
+
+        /* Gaya untuk section header (h2) */
+        .section-container {
+            display: flex; /* Menggunakan flexbox untuk menyusun Experience dan Agility */
+            justify-content: space-between; /* Membagi ruang secara merata */
+            align-items: flex-start; /* Menjaga agar bagian agility sejajar di atas */
+            margin-left: 12%; /* Margin kiri untuk section header */
+            margin-right: 30%; /* Margin kanan untuk section header */
+            margin-top: 0;
+        }
+
+        /* Gaya untuk paragraf */
+        p {
+            margin-left: 12%; /* Margin kiri untuk paragraf */
+            margin-right: 12%; /* Margin kanan untuk paragraf */
+            margin-bottom: 0; /* Margin bawah untuk paragraf */
+        }
+
+        /* Gaya untuk tabel */
+        table {
+            margin-left: 12%; /* Margin kiri untuk tabel */
+            margin-right: 20%; /* Margin kanan untuk tabel */
+            margin-top: 20px; /* Margin atas untuk tabel */
+            margin-bottom: 20px; /* Margin bawah untuk tabel */
+            width: 40%; /* Lebar tabel */
+            border-collapse: collapse; /* Menggabungkan border tabel */
+        }
+
+        th, td {
+            border: 1px solid rgb(255, 255, 255); /* Border untuk sel tabel */
+            padding: 10px; /* Padding di dalam sel tabel */
+            text-align: left; /* Penjajaran teks di dalam sel tabel */
+        }
+
+        /* Styling untuk masing-masing h2 */
+        .experience-heading,
+        .agility-heading {
+            color: rgb(255, 255, 255); /* Warna teks untuk pengalaman dan agility */
+            font-size: 24px; /* Ukuran font untuk pengalaman dan agility */
+        }
+
+        /* Gaya untuk agility section */
+        .agility-container {
+            display: flex;
+            flex-direction: column; /* Menyusun progress bar secara vertikal */
+            align-items: flex-start; /* Membuat teks di progress bar align ke kiri */
+        }
+
+        /* Gaya untuk skills bar */
+        .skills-bar {
+            margin-bottom: 10px; /* Margin bawah untuk skills bar */
+            width: 100%; /* Lebar penuh */
+        }
+
+        .progress-bar {
+            width: 350%;
+            background-color: #604022; /* Warna latar belakang progress bar */
+            height: 20px;
+            margin-bottom: 10px;
+        }
+
+        .progress {
+            background-color: #FFD700; /* Warna progress */
+            height: 100%;
+        }
+
+        .skills-bar p {
+            margin-bottom: 5px;
+            font-size: 16px;
+        }
+
+        /* Gaya tambahan untuk merapikan tabel dan list */
+        table, ul {
+            margin-bottom: 40px; /* Menambah jarak bawah untuk tabel dan ul */
+        }
+
+        /* Margin untuk hobi dan favorit */
+        .hobby-heading,
+        .favorites-heading,
+        .education-heading {
+            margin-left: 12%;
+            margin-top: 5px; /* Tambahan jarak atas */
+        }
+
+        /* Gaya untuk paragraf berdasarkan kategori */
+        .experience-text {
+            margin-left: 10px;
+            font-size: 16px;
+        }
+
+        .agility-text {
+            font-weight: bold; /* Contoh untuk memberi gaya berbeda pada agility text */
+            
+        }
+
+        .hobby-text {
+            font-style: italic;
+        }
+
+        .favorites-text {
+            color: #FFD700;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div class="header">
+        <h1>CV MUHAMMAD ARDHI ARIF</h1> <!-- Judul utama halaman -->
+        <div class="navbar">
+            <a href="https://www.instagram.com">
+                <img src="instagram logo.png" alt="Instagram"> <!-- Ikon Instagram -->
+            </a>
+            <a href="mailto:example@gmail.com">
+                <img src="gmail logo.png" alt="Gmail"> <!-- Ikon Gmail -->
+            </a>
+            <a href="tel:+628123456789">
+                <img src="whatsapp logo.png" alt="Telefon"> <!-- Ikon Telepon -->
+            </a>
+        </div>
+    </div>
+    
+    <img src="Background (1).jpg" alt="Ardhi" width="1500" height="400"> <!-- Gambar latar belakang -->
+
+    <p>"Halo saya Muhammad Ardhi Arif, Saya mahasiswa di Telkom University jurusan S1 Sistem Informasi, Saya lahir di Bandung 23 Juni 2004 dan sekarang saya bertempat tinggal di Cirebon "</p>
+
+    <div class="section-container">
+        <div>
+            <h2 class="experience-heading">Experience</h2> <!-- Judul Experience -->
+            <p class="experience-text">
+                - Project Dosen "Sosialisasi aplikasi navigasi NAVIKU"<br>
+                - Organization TIFOSI "Ceremony divisi choreo"<br>
+                - Organization KOALISI "Membuat desain poster ALL EYES ON PALESTINE"<br>
+                - Organization KOALISI "Sosialisasi digital ke SD Sukabirus"<br>
+                - Internship PT BIJB Kertajati International Airport
+            </p> 
+        </div>
+        <div class="agility-container">
+            <h2 class="agility-heading">Agility</h2> <!-- Judul Agility -->
+            <!-- Progress bar untuk Agility -->
+            <div class="skills-bar">
+                <p class="agility-text">Team work</p>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 90%;"></div>
+                </div>
+            </div>
+
+            <div class="skills-bar">
+                <p class="agility-text">Editing</p>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 75%;"></div>
+                </div>
+            </div>
+
+            <div class="skills-bar">
+                <p class="agility-text">Composting Video</p>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 50%;"></div>
+                </div>
+            </div>
+
+            <div class="skills-bar">
+                <p class="agility-text">Manual Handdrawing</p>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 80%;"></div>
+                </div>
+            </div>
+
+            <div class="skills-bar">
+                <p class="agility-text">Layout</p>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 70%;"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <h2 class="hobby-heading">Hobi</h2> <!-- Judul Hobi -->
+    <p class="hobby-text">
+        Beberapa hobi saya adalah bermain voli, mendesain website, dan mendengarkan musik.
+    </p>
+    
+    <h2 class="favorites-heading">Ini beberapa hal favorit saya</h2> <!-- Judul Hal Favorit -->
+    <p class="favorites-text">
+        1. Makanan favorit: Indomie Tante<br>
+        2. Musik favorit: "Can't Help Falling In Love" by Elvis Presley<br>
+        3. Film favorit: The Kingsman
+    </p>
+    
+    <h2 class="education-heading">Riwayat Pendidikan</h2> <!-- Judul Riwayat Pendidikan -->
+    
+    <table>
+        <tr>
+            <th>No</th>
+            <th>Pendidikan</th>
+            <th>Tahun</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>SDIT Nurusshidiq</td>
+            <td>2010-2016</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>SMPIQU Al-Bahjah</td>
+            <td>2016-2019</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>SMA Al-Bahjah</td>
+            <td>2019-2022</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>Telkom University</td>
+            <td>2022-Sekarang</td>
+        </tr>
+    </table>
+
+</body>
+</html>
